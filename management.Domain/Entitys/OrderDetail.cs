@@ -13,4 +13,4 @@ public class OrderDetail
     // 🧮 Propiedad calculada (no se mapea a la BD)
     public double Total => Quantity * UnitPrice;
 
-}
+}                       
