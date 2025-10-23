@@ -138,6 +138,9 @@
             "projectReferences": {
               "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj": {
                 "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj"
+              },
+              "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj": {
+                "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj"
               }
             }
           }
