@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/mateo/.nuget/packages/": {}
+    "/home/jb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
+      "projectUniqueName": "/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
       "projectName": "management.Domain",
-      "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
-      "packagesPath": "/home/mateo/.nuget/packages/",
-      "outputPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/obj/",
+      "projectPath": "/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
+      "packagesPath": "/home/jb/.nuget/packages/",
+      "outputPath": "/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/mateo/.nuget/NuGet/NuGet.Config"
+        "/home/jb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
