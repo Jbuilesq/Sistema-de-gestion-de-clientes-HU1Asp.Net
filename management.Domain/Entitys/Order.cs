@@ -8,6 +8,6 @@ public class Order
     public string Status  { get; set; } = "Pending";
     
     public Customer customer { get; set; }
-    
+    public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
     
 }
