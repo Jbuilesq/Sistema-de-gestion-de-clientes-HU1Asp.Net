@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/management.Api.csproj": {}
+  },
+  "projects": {
+    "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/management.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/management.Api.csproj",
+        "projectName": "management.Api",
+        "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/management.Api.csproj",
+        "packagesPath": "/home/mateo/.nuget/packages/",
+        "outputPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mateo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj": {
+                "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj",
+        "projectName": "management.Application",
+        "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj",
+        "packagesPath": "/home/mateo/.nuget/packages/",
+        "outputPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mateo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj": {
+                "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
+        "projectName": "management.Domain",
+        "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
+        "packagesPath": "/home/mateo/.nuget/packages/",
+        "outputPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mateo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
