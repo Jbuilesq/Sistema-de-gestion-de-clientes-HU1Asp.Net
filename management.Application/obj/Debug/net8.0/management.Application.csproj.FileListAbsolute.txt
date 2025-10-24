@@ -9,8 +9,8 @@
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/management.Application.AssemblyInfo.cs
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/management.Application.csproj.CoreCompileInputs.cache
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/management.Application.sourcelink.json
-/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/management.Application.csproj.CopyComplete
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/management.Application.dll
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/refint/management.Application.dll
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/management.Application.pdb
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/ref/management.Application.dll
+/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/obj/Debug/net8.0/manageme.042C4937.Up2Date

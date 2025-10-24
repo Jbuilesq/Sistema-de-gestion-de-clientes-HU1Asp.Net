@@ -25,6 +25,11 @@ builder.Services.AddScoped<IRepository<Product>, ProductRepository>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IRepository<Customer>, CustomerRepository>();
 
+//Iyectamos el servicio de Order
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IRepository<Order>, OrderRepository>();
+
+
 // Configuracion base de datos
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseMySql(connection, MySqlServerVersion.AutoDetect(connection)));

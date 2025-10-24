@@ -134,9 +134,12 @@
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.management.Api.props
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/staticwebassets.pack.json
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/scopedcss/bundle/management.Api.styles.css
-/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/management.Api.csproj.CopyComplete
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/management.Api.dll
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/refint/management.Api.dll
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/management.Api.pdb
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/management.Api.genruntimeconfig.cache
 /home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/ref/management.Api.dll
+/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/bin/Debug/net8.0/management.Api.staticwebassets.endpoints.json
+/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/staticwebassets/msbuild.management.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Api/obj/Debug/net8.0/manageme.36A03E05.Up2Date
