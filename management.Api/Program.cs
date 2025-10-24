@@ -16,10 +16,19 @@ var connection = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Añadimos los controladores
+// Añadimos los servicios
 builder.Services.AddControllers();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IRepository<Product>, ProductRepository>();
+
+// Inyectamos el servicio
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IRepository<Customer>, CustomerRepository>();
+
+//Iyectamos el servicio de Order
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IRepository<Order>, OrderRepository>();
+
 
 // Configuracion base de datos
 builder.Services.AddDbContext<AppDbContext>(options => 

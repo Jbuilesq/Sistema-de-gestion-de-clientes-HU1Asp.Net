@@ -8,24 +8,25 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/mateo/.nuget/packages/": {}
+    "/home/jb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
+      "projectUniqueName": "/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
       "projectName": "management.Domain",
-      "projectPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
-      "packagesPath": "/home/mateo/.nuget/packages/",
-      "outputPath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/obj/",
+      "projectPath": "/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/management.Domain.csproj",
+      "packagesPath": "/home/jb/.nuget/packages/",
+      "outputPath": "/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/mateo/.nuget/NuGet/NuGet.Config"
+        "/home/jb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -38,7 +39,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -54,12 +61,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

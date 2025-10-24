@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UB0wQn4xeRlCEP3jPjJVb7qFojErY3PRa+FHLAqZnEXPvKRgsUJjk0qpODUHmjzzn2RbG5wp7m5QOozFJCnIww==",
+  "dgSpecHash": "630Y/e7U34c=",
   "success": true,
-  "projectFilePath": "/home/mateo/Documents/Riwi/Avanzada/C#/Projects/PruebaHU1M2/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/jb/Escritorio/JB/Sistema-de-gestion-de-clientes-HU1Asp.Net/management.Application/management.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/jb/.nuget/packages/microsoft.netcore.app.ref/8.0.20/microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "/home/jb/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

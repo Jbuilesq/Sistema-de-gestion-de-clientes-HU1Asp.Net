@@ -1,5 +1,6 @@
 using management.Application.DTOs;
 using management.Application.Interfaces.Services;
+using management.Domain.Entitys;
 using Microsoft.AspNetCore.Mvc;
 
 namespace management.Api.Controllers;
