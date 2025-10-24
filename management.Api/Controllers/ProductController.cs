@@ -19,6 +19,7 @@ public class ProductController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductDTO>>> GetAllAsync()
     {
+        Console.WriteLine("ingresa");
         var products = await _productService.GetAllProductsAsync();
         return Ok(products);
     }
@@ -29,5 +30,31 @@ public class ProductController : ControllerBase
     {
         var product = await _productService.GetByIdProductsAsync(id);
         return Ok(product);
+    }
+
+    // Crear producto
+    [HttpPost]
+    public async Task<ActionResult<ProductDTO>> CreateAsync(ProductCreateDto product)
+    {
+       return await _productService.CreateProductAsync(product);
+    }
+    
+    // Editar producto
+    [HttpPut]
+    public async Task<ActionResult<ProductDTO>> UpdateAsync(int id, ProductUpdateDto product)
+    {
+        return await _productService.UpdateProductAsync(product);
+    }
+    
+    // Eliminar producto
+    [HttpDelete]
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var product = await _productService.GetByIdProductsAsync(id);
+        if (product == null) return false;
+        
+        await _productService.DeleteProductAsync(id);
+
+        return true;
     }
 }

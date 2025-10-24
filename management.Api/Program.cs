@@ -1,10 +1,30 @@
+using management.Application.Interfaces.Services;
+using management.Application.Services;
+using management.Domain.Entitys;
+using management.Domain.Interfaces;
+using management.Infrastructure.Data;
+using management.Infrastructure.Repositorys;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Añadimos la configuracion para la base de datos
+var connection = builder.Configuration.GetConnectionString("Default");
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Añadimos los controladores
+builder.Services.AddControllers();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IRepository<Product>, ProductRepository>();
+
+// Configuracion base de datos
+builder.Services.AddDbContext<AppDbContext>(options => 
+    options.UseMySql(connection, MySqlServerVersion.AutoDetect(connection)));
+    
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,6 +56,7 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
+app.MapControllers();
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

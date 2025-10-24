@@ -19,6 +19,7 @@ public class ProductService : IProductService
     {
         return new ProductDTO
         {
+            Id = product.Id,
             Name = product.Name,
             Description = product.Description,
             Price = product.Price,
@@ -68,6 +69,8 @@ public class ProductService : IProductService
         existe.Price = p.Price;
         existe.Stock = p.Stock;
         existe.UpdatedAt = DateTime.Now;
+
+        await _productRepository.UpdateAsync(existe);
 
         return MapDto(existe);
     }
