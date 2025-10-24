@@ -33,9 +33,29 @@ public class ProductController : ControllerBase
         return Ok(product);
     }
 
+    // Crear producto
     [HttpPost]
     public async Task<ActionResult<ProductDTO>> CreateAsync(ProductCreateDto product)
     {
        return await _productService.CreateProductAsync(product);
+    }
+    
+    // Editar producto
+    [HttpPut]
+    public async Task<ActionResult<ProductDTO>> UpdateAsync(int id, ProductUpdateDto product)
+    {
+        return await _productService.UpdateProductAsync(product);
+    }
+    
+    // Eliminar producto
+    [HttpDelete]
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var product = await _productService.GetByIdProductsAsync(id);
+        if (product == null) return false;
+        
+        await _productService.DeleteProductAsync(id);
+
+        return true;
     }
 }
