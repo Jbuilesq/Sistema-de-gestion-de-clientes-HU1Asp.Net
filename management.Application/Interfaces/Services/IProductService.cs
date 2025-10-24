@@ -1,4 +1,5 @@
 using management.Application.DTOs;
+using management.Domain.Entitys;
 
 namespace management.Application.Interfaces.Services;
 
@@ -9,5 +10,6 @@ public interface IProductService
     public Task<ProductDTO> CreateProductAsync(ProductCreateDto p);
     public Task<ProductDTO> UpdateProductAsync(ProductUpdateDto p);
     public Task DeleteProductAsync(int id);
+    public ProductDTO MapDto(Product product);
 
 }
