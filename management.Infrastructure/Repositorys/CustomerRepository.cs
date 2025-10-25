@@ -1,6 +1,7 @@
 using management.Domain.Entitys;
 using management.Domain.Interfaces;
 using management.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace management.Infrastructure.Repositorys;
 
@@ -13,30 +14,34 @@ public class CustomerRepository : IRepository<Customer>
         _context = context;
     }
 
-    public Task<Customer> CreateAsync(Customer t)
+    public async Task<Customer> CreateAsync(Customer t)
     {
-        throw new NotImplementedException();
+        _context.Customers.Add(t);
+        await _context.SaveChangesAsync();
+        return t;
     }
 
-    public Task<Customer> UpdateAsync(Customer t)
+    public async Task<Customer> UpdateAsync(Customer t)
     {
-        throw new NotImplementedException();
+        _context.Customers.Update(t);
+        await _context.SaveChangesAsync();
+        return t;
     }
 
-    public Task<IEnumerable<Customer>> GetAllAsync()
+    public async Task<IEnumerable<Customer>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await _context.Customers.ToListAsync();
     }
 
     public async Task<Customer> GetByIdAsync(int id)
     {
-        var customer = await _context.Customers.FindAsync(id);
+        return await _context.Customers.FindAsync(id);
         
-        return customer;
     }
 
-    public Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var custumer = await _context.Customers.FindAsync(id);
+        _context.Customers.Remove(custumer);
     }
 }

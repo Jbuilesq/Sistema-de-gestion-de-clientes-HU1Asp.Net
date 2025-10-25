@@ -26,5 +26,33 @@ public class CustomerController : ControllerBase
 
         return Ok(customer);
     }
+    
+    [HttpGet]
+    public IActionResult GetAll() => Ok(_service.GetAll());
+    
+    [HttpPost]
+    public IActionResult Add(Customer customer)
+    {
+        var create = _service.Create(customer);
+        return Ok(create);
+    }
+
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, Customer customer)
+    {
+        var update = _service.Update(customer);
+        if  (update == null) return NotFound();
+        return Ok(update);
+    }
+    
+    //Eliminar orden
+    [HttpDelete]
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var order = await _service.GetCustomerByIdAsync(id);
+        if (order == null) return false;
+        await _service.Delete(id);
+        return true;
+    }
 
 }
