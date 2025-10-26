@@ -59,7 +59,7 @@ public class ProductService : IProductService
     }
 
     // Actualizar producto
-    public async Task<ProductDTO> UpdateProductAsync(ProductUpdateDto p)
+    public async Task<ProductDTO> UpdateProductAsync(int id, ProductUpdateDto p)
     {
         var existe = await _productRepository.GetByIdAsync(p.Id);
         if (existe == null) return null;
