@@ -660,18 +660,12 @@
           "management.Domain": "1.0.0"
         },
         "runtime": {
-          "management.Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "management.Application.dll": {}
         }
       },
       "management.Domain/1.0.0": {
         "runtime": {
-          "management.Domain.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "management.Domain.dll": {}
         }
       }
     }

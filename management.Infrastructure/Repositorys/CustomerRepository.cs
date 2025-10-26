@@ -1,42 +1,55 @@
 using management.Domain.Entitys;
 using management.Domain.Interfaces;
 using management.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace management.Infrastructure.Repositorys;
 
 public class CustomerRepository : IRepository<Customer>
 {
     private readonly AppDbContext _context;
-
+    
     public CustomerRepository(AppDbContext context)
     {
         _context = context;
     }
-
-    public Task<Customer> CreateAsync(Customer t)
+    
+    // Crear customer
+    public async Task<Customer> CreateAsync(Customer customer)
     {
-        throw new NotImplementedException();
+        _context.Customers.Add(customer);
+        await _context.SaveChangesAsync();
+        return customer;
     }
-
-    public Task<Customer> UpdateAsync(Customer t)
+    
+    // Editar customer
+    public async Task<Customer> UpdateAsync(Customer customer)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task<IEnumerable<Customer>> GetAllAsync()
-    {
-        throw new NotImplementedException();
-    }
-
-    public async Task<Customer> GetByIdAsync(int id)
-    {
-        var customer = await _context.Customers.FindAsync(id);
-        
+        _context.Customers.Update(customer);
+        await _context.SaveChangesAsync();
         return customer;
     }
 
-    public Task DeleteAsync(int id)
+    // Obtener todos los customers
+    public async Task<IEnumerable<Customer>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await _context.Customers.ToListAsync();
+    }
+
+    //Obtener customer por id
+    public async Task<Customer> GetByIdAsync(int id)
+    {
+        return await _context.Customers.FindAsync(id);
+    }
+
+    // Eliminar customer
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var customer = await _context.Customers.FindAsync(id);
+        if (customer == null) return false;
+        
+        _context.Customers.Remove(customer);
+        await _context.SaveChangesAsync();
+        return true;
     }
 }

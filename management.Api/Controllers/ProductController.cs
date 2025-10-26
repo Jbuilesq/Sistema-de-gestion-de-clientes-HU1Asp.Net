@@ -44,7 +44,7 @@ public class ProductController : ControllerBase
     [HttpPut]
     public async Task<ActionResult<ProductDTO>> UpdateAsync(int id, ProductUpdateDto product)
     {
-        return await _productService.UpdateProductAsync(product);
+        return await _productService.UpdateProductAsync(product.Id, product);
     }
     
     // Eliminar producto

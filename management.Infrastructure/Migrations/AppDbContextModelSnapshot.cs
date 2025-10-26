@@ -34,6 +34,9 @@ namespace management.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -41,6 +44,9 @@ namespace management.Infrastructure.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("Id");
 
@@ -55,22 +61,22 @@ namespace management.Infrastructure.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CustumerId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("OrderDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("customerId")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("customerId");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Orders");
                 });
@@ -83,10 +89,10 @@ namespace management.Infrastructure.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("ProductId")
+                    b.Property<int>("OrderId")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantity")
@@ -95,11 +101,12 @@ namespace management.Infrastructure.Migrations
                     b.Property<double>("UnitPrice")
                         .HasColumnType("double");
 
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
-
-                    b.HasIndex("ProductId");
 
                     b.ToTable("OrderDetails");
                 });
@@ -123,6 +130,9 @@ namespace management.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(65,30)");
 
@@ -134,6 +144,8 @@ namespace management.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OrderId");
+
                     b.ToTable("Products");
                 });
 
@@ -141,7 +153,7 @@ namespace management.Infrastructure.Migrations
                 {
                     b.HasOne("management.Domain.Entitys.Customer", "customer")
                         .WithMany("Orders")
-                        .HasForeignKey("customerId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -151,20 +163,19 @@ namespace management.Infrastructure.Migrations
             modelBuilder.Entity("management.Domain.Entitys.OrderDetail", b =>
                 {
                     b.HasOne("management.Domain.Entitys.Order", "order")
-                        .WithMany("OrderDetails")
+                        .WithMany()
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("management.Domain.Entitys.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
                     b.Navigation("order");
+                });
+
+            modelBuilder.Entity("management.Domain.Entitys.Product", b =>
+                {
+                    b.HasOne("management.Domain.Entitys.Order", null)
+                        .WithMany("products")
+                        .HasForeignKey("OrderId");
                 });
 
             modelBuilder.Entity("management.Domain.Entitys.Customer", b =>
@@ -174,7 +185,7 @@ namespace management.Infrastructure.Migrations
 
             modelBuilder.Entity("management.Domain.Entitys.Order", b =>
                 {
-                    b.Navigation("OrderDetails");
+                    b.Navigation("products");
                 });
 #pragma warning restore 612, 618
         }

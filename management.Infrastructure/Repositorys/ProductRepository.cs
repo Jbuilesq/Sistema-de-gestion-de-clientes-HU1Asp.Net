@@ -39,9 +39,10 @@ public class ProductRepository : IRepository<Product>
         return product;
     }
     
-    public async Task DeleteAsync(int id)
+    public async Task<bool> DeleteAsync(int id)
     {
         var product = await _context.Products.FindAsync(id);
         _context.Products.Remove(product);
+        return true;
     }
 }
