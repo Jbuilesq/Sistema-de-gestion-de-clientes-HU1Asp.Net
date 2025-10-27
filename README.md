@@ -124,7 +124,7 @@ TECNOLOGÍAS UTILIZADAS
 AUTOR
 ---------------------------------------------
 Proyecto académico: HU1 – Sistema de Gestión de Clientes
-Desarrollado por: Alejandro Santos
+Desarrollado por: Celula HUBBLE
 Lenguaje: C#
 Framework: ASP.NET Core 8.0
 Año: 2025
